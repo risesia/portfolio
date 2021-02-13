@@ -111,7 +111,7 @@ The web color gonna be black and white*/
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
-    color: var(--main-white);
+    color: #000;
   }
   
   h1,
@@ -122,8 +122,9 @@ The web color gonna be black and white*/
   }
   
   h1 {
-    font-family: 'D-DIN';
-    font-size: 7rem; 
+    font-family: 'D-DINExp-Bold';
+    text-transform: uppercase;
+    font-size: 2.2rem; 
   }
   
   h2 {
@@ -202,27 +203,32 @@ The web color gonna be black and white*/
   }
   
   .welcome-section > p {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 100;
     position: relative;
-    bottom: 18px;
+    bottom: 5px;
     /*
     left: 5px;
     */
   }
   
+  .welcome-section > img {
+    width: 100%;
+    max-width: 140px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+  }
+
   /* Projects section */
   
   .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--main-blue);
   }
   
   .projects-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid var(--main-white);
   }
   
   @media (max-width: 28.75em) {
@@ -234,7 +240,7 @@ The web color gonna be black and white*/
   /* "Automagic" image grid using no media queries */
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
