@@ -401,5 +401,9 @@
       flex-direction: column;
       text-align: center;
     }
+    .btn-show-all {
+      position: relative;
+      bottom: 0;
+    }
   }
   
