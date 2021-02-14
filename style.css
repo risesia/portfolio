@@ -1,3 +1,12 @@
+/**
+    (c) Created for freeCodeCamp, to complete freeCodeCamp Responsive Web Design Certification.
+
+    Code forked from https://codepen.io/freeCodeCamp/full/zNBOYG by @lasjorg/freeCodeCamp, modified by me (Rizky Ramadhan).
+
+    Design inspirated by design.studio.
+
+    All copyrighted content in this website used under fair use, for personal use/educational use (not commercialized) to complete freeCodeCamp Responsive Web Design Certification.
+**/
 @font-face {
   font-family: 'D-DIN';
   src: url(../portfolio/fonts/D-DIN.woff2) format("woff2");
@@ -35,13 +44,11 @@
   font-display: block;
 }
 
-  /* Base reset */
   * {
     margin: 0;
     padding: 0;
   }
   
-  /* box-sizing and font sizing */
   *,
   *::before,
   *::after {
@@ -50,47 +57,22 @@
   
   html {
     box-sizing: border-box;
-  
-    /* [This note made by lasjorg/freeCodeCamp]
-    * Set font size for easy rem calculations
-     * default document font size = 16px, 1rem = 16px, 100% = 16px
-     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-    */
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
-  /* [This note made by lasjorg/freeCodeCamp]
-   * A few media query to set some font sizes at different screen sizes.
-   * This helps automate a bit of responsiveness.
-   * The trick is to use the rem unit for size values, margin and padding.
-   * Because rem is relative to the document font size
-   * when we scale up or down the font size on the document
-   * it will affect all properties using rem units for the values.
-  */
-  
-  /* [This note made by lasjorg/freeCodeCamp]
-   * I am using the em unit for breakpoints
-   * The calculation is the following
-   * screen size divided by browser base font size
-   * As an example: a breakpoint at 980px
-   * 980px / 16px = 61.25em
-  */
-  
-  /* 1200px / 16px = 75em */
+
   @media (max-width: 75em) {
     html {
       font-size: 60%;
     }
   }
   
-  /* 980px / 16px = 61.25em */
   @media (max-width: 61.25em) {
     html {
       font-size: 58%;
     }
   }
   
-  /* 460px / 16px = 28.75em */
   @media (max-width: 28.75em) {
     html {
       font-size: 55%;
@@ -101,7 +83,7 @@
   
   body {
     font-family: 'D-DIN', sans-serif;
-    font-size: 1.8rem; /* 18px */
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.4;
     color: #000;
@@ -186,10 +168,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*
-    align-items: flex-start;
-    padding-left: 14rem;
-    */
     width: 100%;
     height: 100vh;
     background-color: #fff;
@@ -200,9 +178,6 @@
     font-weight: 100;
     position: relative;
     bottom: 5px;
-    /*
-    left: 5px;
-    */
   }
   
   .welcome-section > img {
@@ -233,7 +208,6 @@
     }
   }
   
-  /* "Automagic" image grid using no media queries */
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
@@ -289,16 +263,8 @@
     bottom: 5.5rem;
   }
   
-  /*
-  .btn-show-all:hover {
-    color: rgb(37, 37, 37);
-  }
-  */
   .btn-show-all:hover > i {
     transform: translateX(2px);
-    /*
-    color: rgb(37, 37, 37);
-    */
   }
   
   .btn-show-all > i {
@@ -389,7 +355,7 @@
   
   footer > p {
     margin: 0rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   
   footer i {
